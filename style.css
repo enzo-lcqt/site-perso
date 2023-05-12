@@ -1,0 +1,101 @@
+body{
+    background-color: #000;
+}
+h1{
+    color: #111;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-family: 'baloo thambi', cursive;
+    font-size: 4rem;
+}
+.container > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.container > span:nth-child(2){
+   animation-delay: 0.25s; 
+}
+.container > span:nth-child(3){
+    animation-delay: 0.5s; 
+ }
+ .container > span:nth-child(4){
+    animation-delay: 0.75s; 
+ }
+ .container > span:nth-child(5){
+    animation-delay: 1s; 
+ }
+ .container > span:nth-child(6){
+    animation-delay: 1.25s; 
+ }
+ .container > span:nth-child(7){
+    animation-delay: 1.5s; 
+ }
+ .container > span:nth-child(8){
+    animation-delay: 1.75s; 
+ }
+ .container > span:nth-child(9){
+    animation-delay: 2s; 
+ }
+.aside{
+    background-color: #000;
+    float: left;
+    width: 25%;
+    height: 40rem;  
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 75%;
+    float: right;
+    color: skyblue;
+}
+a{
+    color: skyblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+h1{
+    font-size: 4rem;
+}
+.aside{
+    visibility: hidden;
+    display: none;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px red, 0 0 50px red, 0 0 100px red;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+main{
+    width: 100%;
+    float: right;
+    color: red;
+    font-size: 2rem;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+video{
+    width: 100%;
+}
+}
+
